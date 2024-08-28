@@ -1,8 +1,10 @@
-## Escreva um algoritmo em Python que dada a idade de uma pessoa, determine sua classificação: maior de idade ;menor de idade;
+## Write a Python algorithm that, given a person's age, determines their classification: adult or minor.
 
-idade = int(input('Digite sua idade: '))
+# User interaction
+age = int(input('Enter your age: '))
 
-if idade <= 18:
-    print('Voce é menor de idade')
+# Conditional structures and result display
+if age <= 18:
+    print('You are a minor')
 else:
-    print('Voce ja é maior de idade')
+    print('You are an adult')

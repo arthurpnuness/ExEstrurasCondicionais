@@ -1,9 +1,11 @@
-## Leia um número fornecido pelo usuário. Se esse número for positivo, apresente o dobro do valor digitado. Se o número for negativo, mostre uma mensagem dizendo que o número é inválido.
+## Read a number provided by the user. If the number is positive, display its double. If the number is negative, show a message saying that the number is invalid
 
-num = float(input('Digite um numero: '))
+# User interaction
+num = float(input('Enter a number: '))
 
+# Conditional structures, calculations, and result display
 if num > 0:
-    dobro = num * 2
-    print('O numero que voce digitou é maior que 0 e o dobro dele é {}'.format(dobro))
+    double = num * 2
+    print('The number you entered is greater than 0, and its double is {}'.format(double))
 else:
-    print('O numero que voce digitou é inválido')
+    print('The number you entered is invalid')

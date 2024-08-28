@@ -1,10 +1,13 @@
-## Um motorista deseja colocar no seu tanque X reais de gasolina. Escreva um algoritmo para ler o preço do litro da gasolina e o valor do pagamento, e exibir quantos litros ele conseguiu colocar no tanque.
+## A driver wants to put X amount of money into their gas tank. Write an algorithm to read the price per liter of gasoline and the payment amount, and display how many liters they were able to put in the tank.
 
-precoGasolina = 6.00
-pagamento = int(input('Quantos o senhor deseja abastecer: '))
+gasolinePrice = 6.00  # This is where the gasoline price was defined
+payment = int(input('How much would you like to spend on fuel? '))  # User interaction
 
-litros = pagamento / precoGasolina
+# Calculation
+liters = payment / gasolinePrice
 
-print('A quantidade de litros abastecida foi de {}'.format(litros))
+# Display the result
+print('The amount of fuel filled was {} liters'.format(liters))
+
 
 

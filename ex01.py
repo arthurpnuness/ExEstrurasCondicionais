@@ -1,13 +1,16 @@
-## Faça um algoritmo para calcular o salário mensal de um funcionário. Sabe-se que o funcionário recebe R$35,00 por hora, faça um algoritmo que leia o total de horas trabalhadas no mês e apresente o salário final. Se o salário for menor que R$1000,00 dê um aumento de R$300,00 no salário recebido, senão apresente somente o resultado da multiplicação.
+## Create an algorithm to calculate an employee's monthly salary. It is known that the employee earns R$35.00 per hour. Create an algorithm that reads the total hours worked in the month and displays the final salary. If the salary is less than R$1,000.00, give a R$300.00 raise to the received salary; otherwise, display only the result of the multiplication
 
-valorHora = 35
-horasTrabalhadas = int(input('Digite quantas horas tu trabalhou: '))
+hourlyRate = 35  # This is where the hourly rate was defined
+hoursWorked = int(input('Enter the number of hours you worked: '))  # Interaction with the user
 
-salarioFinal = valorHora * horasTrabalhadas
+# Calculation
+finalSalary = hourlyRate * hoursWorked
 
-if salarioFinal <= 1000:
-    aumento = salarioFinal + 300
-    print('Como voce recebe menos de R$1.000,00 receberá um aumento de R$300,00 Parabens!')
+# Conditional structures and result display
+if finalSalary <= 1000:
+    raiseAmount = finalSalary + 300
+    print('Since you earn less than R$1,000.00, you will receive an increase of R$300.00. Congratulations!')
 else:
-    print('Voce recebe R${} por mês'.format(salarioFinal))
+    print('You earn R${} per month'.format(finalSalary))
+
  

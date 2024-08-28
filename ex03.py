@@ -1,8 +1,10 @@
-## Faça um algoritmo que leia o ano de nascimento de uma pessoa e verifique se ela pode ou não votar (desconsidere o mês de nascimento).
+## Create an algorithm that reads a person's year of birth and checks whether they are eligible to vote (disregard the birth month).
 
-ano = int(input('Digite o ano do teu nascimento: '))
+# User interaction
+yearOfBirth = int(input('Enter your year of birth: '))
 
-if ano <= 2006:
-    print('Parabens voce já pode votar!')
+# Conditional structures and result display
+if yearOfBirth <= 2006:
+    print('Congratulations, you are eligible to vote!')
 else: 
-    print('Infelizmente voce nao tem idade suficiente para votar :( ')
+    print('Unfortunately, you are not old enough to vote. :(')

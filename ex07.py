@@ -1,11 +1,13 @@
-## Faça um programa que receba a altura e o sexo de uma pessoa e calcule e mostre seu peso ideal, utilizando as seguintes formulas (onde  h corresponde a altura): Homens: (72.7 ∗ h) − 58 / Mulheres: (62, 1 ∗ h) − 44, 7
+## Create a program that receives a person's height and gender and calculates and displays their ideal weight, using the following formulas (where h corresponds to height): Men: (72.7 * h) - 58 / Women: (62.1 * h) - 44.7
 
-altura = float(input('Qual a sua altura: '))
-sexo = input('Voce se identifica pelo genero masculino ou feminino? ')
+# User interaction
+h = float(input('What is your height? '))
+gender = input('Do you identify as male or female? ')
 
-if sexo == "masculino":
-    pecoIdeal = (72.7 * altura) - 58
-    print('O teu peso ideal é {}'.format(pecoIdeal))
+# Conditional structures, calculations, and result display
+if gender == "male":
+    idealWeight = (72.7 * h) - 58
+    print('Your ideal weight is {}'.format(idealWeight))
 else:
-    pecoIdeal = (62.1 * altura) - 44.7
-    print('O teu peso ideal é {}'.format(pecoIdeal))
+    idealWeight = (62.1 * h) - 44.7
+    print('Your ideal weight is {}'.format(idealWeight))
